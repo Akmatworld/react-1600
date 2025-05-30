@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import MyButton from './MyButton/MyButton.jsx'
 
 function App() {
