@@ -1,0 +1,18 @@
+/* Block */
+.header {
+    &__nav {
+        background: red;
+    }
+    &__ul {
+        list-style: none;
+    }
+    &__li {
+        padding: 10px;
+        text-decoration: underline;
+    }
+    &__span {
+        &-red {
+            color: red;
+        }
+    }
+}
