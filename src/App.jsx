@@ -44,9 +44,8 @@ function App() {
     }
 
     if (button === '=') {
-      const plusArr = numbers.split('+')
-      const result = plusArr.reduce((accumulate, number) => accumulate += +number, 0)
-      setNumbers(result)
+        const result = eval(numbers)
+        setNumbers(`${result}`)
       return
     }
 
