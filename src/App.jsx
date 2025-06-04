@@ -1,12 +1,20 @@
+import { Routes, Route } from "react-router";
+
 import './App.scss';
+
+import Nav from './Navigation'
+import Home from './pages/Home'
+import About from './pages/About'
 
 function App() {
 
   return (
     <>
-      <main>
-        Home page
-      </main>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Routes>
     </>
   )
 }
